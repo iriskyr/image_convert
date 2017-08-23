@@ -1,0 +1,10 @@
+<launch> 
+  <group ns="lifecam" >
+    <node name="lifecam" pkg="uvc_camera" type="camera_node">
+      <param name="device" type="string" value="/dev/video0"/>
+      <param name="width" type="int" value="320"/>
+      <param name="height" type="int" value="240"/>
+      <param name="fps" type="int" value="10"/>
+    </node>
+  </group>
+</launch>
